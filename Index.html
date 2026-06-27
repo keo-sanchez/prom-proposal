@@ -262,9 +262,12 @@ await sendChoice("Yes");
     </p>
 
     <p>
-    Your prize includes unlimited teasing rights, the ability to roast me whenever you want,
-    and one complimentary dramatic dropkick into my ego.
+    Your prize includes unlimited teasing rights,
     </p>
+
+    <p>
+     the ability to roast me whenever you want, and one complimentary dramatic dropkick into my ego.
+     </p>
 
     <p>
     I'll probably complain the whole time, so maybe stop if I start being too dramatic. ❤️😂
@@ -284,7 +287,13 @@ result.innerHTML="💖 Accepted... but please leave at least a few ribs for me. 
 
 async function kick(){
 await sendChoice("No");
-result.innerHTML=" Wrong answer detected. The council has overruled your decision. Congratulations, you're coming to prom with me anyway. 😌❤️";
+result.innerHTML=`
+    <h2>Wrong answer detected.</h2>
+
+    <p>
+    The council has overruled your decision. Congratulations, you're coming to prom with me anyway. 😌❤️
+    </p>
+    `;
 }
 </script>
 
