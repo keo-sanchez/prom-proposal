@@ -3,169 +3,278 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prom?</title>
+<title>Banana Leclerc Prom</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
-    background:linear-gradient(135deg,#ff9ecf,#ffd6e7,#fff0f6);
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+min-height:100vh;
+font-family:Poppins,sans-serif;
+background:
+radial-gradient(circle,#ffffff55 2px,transparent 3px),
+linear-gradient(135deg,#ffb6d5,#ffe8f2);
+background-size:60px 60px,100% 100%;
+overflow-x:hidden;
+color:#3b1835;
 }
 
-.card{
-    background:white;
-    width:90%;
-    max-width:650px;
-    padding:40px;
-    border-radius:25px;
-    text-align:center;
-    box-shadow:0 20px 40px rgba(0,0,0,.2);
+.page{
+position:relative;
+max-width:1400px;
+margin:auto;
+min-height:100vh;
+padding:50px;
+}
+
+.title{
+text-align:center;
+position:relative;
+z-index:2;
+}
+
+.badge{
+display:inline-block;
+background:#ed4c83;
+color:white;
+padding:10px 35px;
+border-radius:30px;
+font-weight:bold;
 }
 
 h1{
-    font-size:3rem;
-    color:#ff3f8e;
-    margin-bottom:10px;
+font-family:Pacifico,cursive;
+font-size:70px;
+line-height:1.2;
+margin-top:30px;
 }
 
-h2{
-    margin-bottom:30px;
-    color:#444;
+h1 span{color:#ef4b86}
+
+.subtitle{
+margin:20px;
+font-size:18px;
 }
 
-.buttons{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
+.questions{
+width:610px;
+margin:40px auto;
+position:relative;
+z-index:3;
 }
 
 button{
-    padding:18px;
-    font-size:1.05rem;
-    border:none;
-    border-radius:15px;
-    cursor:pointer;
-    transition:.25s;
-    background:#ff4f95;
-    color:white;
+width:100%;
+height:80px;
+margin:8px 0;
+border:none;
+border-radius:22px;
+background:#fff;
+font-size:18px;
+font-weight:600;
+text-align:left;
+padding:20px;
+box-shadow:0 10px 25px #e88aaa44;
+cursor:pointer;
 }
 
-button:hover{
-    transform:scale(1.03);
-    background:#ff2d7a;
+button:hover{transform:scale(1.02)}
+
+.num{
+background:#ef4b86;
+color:white;
+border-radius:50%;
+padding:10px 16px;
+margin-right:20px;
 }
 
 .note{
-    margin-top:30px;
-    font-size:0.9rem;
-    color:#666;
-    font-style:italic;
+width:650px;
+margin:35px auto;
+padding:25px;
+background:#ffffff88;
+border:2px solid #ffc1d9;
+border-radius:25px;
+text-align:center;
 }
 
-#result{
-    margin-top:30px;
-    font-size:1.2rem;
-    font-weight:bold;
-    color:#ff2d7a;
+/* Banana Leclerc image placeholders */
+
+.banana{
+position:absolute;
+z-index:1;
+}
+
+.left-main{
+left:-20px;
+top:50px;
+width:390px;
+}
+
+.right-top{
+right:20px;
+top:30px;
+width:250px;
+}
+
+.right-mid{
+right:30px;
+top:300px;
+width:250px;
+}
+
+.bottom-left{
+left:70px;
+bottom:80px;
+width:180px;
+}
+
+.bottom-right{
+right:0;
+bottom:0;
+width:330px;
+}
+
+.photo{
+width:100%;
+border-radius:25px;
+border:10px solid white;
+box-shadow:0 20px 40px #cc668855;
+background:#ffd6e5;
+}
+
+.polaroid{
+background:white;
+padding:12px;
+transform:rotate(4deg);
+}
+
+.caption{
+text-align:center;
+font-style:italic;
+margin-top:8px;
+}
+
+.footer{
+text-align:center;
+margin-top:50px;
+}
+
+@media(max-width:900px){
+.banana{display:none}
+.questions,.note{width:90%}
+h1{font-size:45px}
 }
 </style>
 </head>
 
 <body>
 
-<div class="card">
+<div class="page">
 
-<h1>🌸 Prom? 🌸</h1>
+<!-- PUT YOUR BANANA LECLERC PICTURES HERE -->
+<!-- Replace the src filenames with your own images -->
 
-<h2>Will you go to prom with me?</h2>
+<div class="banana left-main">
+<img class="photo" src="banana-leclerc-main.jpg" alt="Banana Leclerc">
+</div>
 
-<div class="buttons">
+<div class="banana right-top polaroid">
+<img class="photo" src="banana-leclerc-top.jpg">
+<div class="caption">my favorite banana &lt;3</div>
+</div>
+
+<div class="banana right-mid polaroid">
+<img class="photo" src="banana-leclerc-side.jpg">
+</div>
+
+<div class="banana bottom-left">
+<img class="photo" src="banana-leclerc-small.jpg">
+<div class="caption">just a silly banana</div>
+</div>
+
+<div class="banana bottom-right">
+<img class="photo" src="banana-leclerc-bottom.jpg">
+</div>
+
+
+<div class="title">
+
+<div class="badge">❤️ IMPORTANT QUESTION</div>
+
+<h1>Will you go<br><span>to prom with me?</span></h1>
+
+<div class="subtitle">
+♡ Choose your answer wisely... 👀 ♡
+</div>
+
+</div>
+
+
+<div class="questions">
 
 <button onclick="correct()">
-1. Yes
+<span class="num">1</span> Yes ❤️
 </button>
 
 <button onclick="dropkick()">
-2. Yes but only if I get to dropkick you.
+<span class="num">2</span> Yes but only if I get to dropkick you. 🍌
 </button>
 
 <button onclick="ribs()">
-3. Yes only because I just wanna rip your ribs.
+<span class="num">3</span> Yes only because I just wanna rip your ribs. 💖
 </button>
 
 <button onclick="kick()">
-4. No, I just wanna kick you.
+<span class="num">4</span> No, I just wanna kick you. 💀
 </button>
 
 </div>
 
-<p class="note">
-✨ If you choose the correct answer, you earn <b>Limitless Points™</b> and get full permission to absolutely beat the shit out of me.
-</p>
 
-<div id="result"></div>
+<div class="note">
+✨ If you choose the correct answer, you get a <b>LIMITLESS POINT™</b><br>
+and full permission to beat the shit out of me.
+</div>
+
+
+<div id="result" class="footer"></div>
 
 </div>
 
+
 <script>
-const result = document.getElementById("result");
+const result=document.getElementById("result");
 
 async function sendChoice(choice){
-    await fetch("https://formspree.io/f/xqevqogy", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            message: "Prom proposal answer",
-            choice: choice,
-            time: new Date().toLocaleString()
-        })
-    });
+await fetch("https://formspree.io/f/xqevqogy",{
+method:"POST",
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify({choice,time:new Date().toLocaleString()})
+});
 }
 
 async function correct(){
-    await sendChoice("Yes");
-
-    result.innerHTML = `
-    <h2>🎉 Correct Answer! 🎉</h2>
-
-    <p>Congratulations! You earned <b>∞ Limitless Points™</b>.</p>
-
-    <p>
-    Your prize includes unlimited teasing rights and a lifetime pass to make fun of me.
-    </p>
-
-    <p>
-    Prom? ❤️
-    </p>
-    `;
+await sendChoice("Yes");
+result.innerHTML="🎉 Correct Answer! ∞ Limitless Points ❤️";
 }
 
 async function dropkick(){
-    await sendChoice("Yes but only if I get to dropkick you.");
-    result.innerHTML = "Accepted... I'll pretend I didn't hear that. 😂❤️";
+await sendChoice("Dropkick");
+result.innerHTML="🍌 Accepted...";
 }
 
 async function ribs(){
-    await sendChoice("Yes only because...");
-    result.innerHTML = "Accepted... but please leave at least a few ribs for me. 💀❤️";
+await sendChoice("Ribs");
+result.innerHTML="💖 Accepted... save some ribs";
 }
 
 async function kick(){
-    await sendChoice("No, I just wanna kick you.");
-    result.innerHTML = "❌ Wrong answer detected. The council has overruled your decision. Congratulations, you're coming to prom with me anyway. 😌❤️";
+await sendChoice("No");
+result.innerHTML="❌ Rejected. Prom anyway 😌";
 }
-
 </script>
 
 </body>
